@@ -8,9 +8,5 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy entrypoint
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
-# Run the app
-CMD ["/entrypoint.sh"]
+# Keep container running
+CMD ["sleep", "infinity"]

@@ -5,7 +5,7 @@
 	"runArgs": ["-p", "8000:8000"],
 	"workspaceFolder": "/workspace",
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-	"overrideCommand": false,
+	"postCreateCommand": "go mod download",
 	"customizations": {
 		"vscode": {
 			"extensions": [
