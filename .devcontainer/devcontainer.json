@@ -1,8 +1,8 @@
 {
 	"name": "Go Dev Container",
 	"dockerFile": "Dockerfile",
-	"forwardPorts": [8000],
-	"runArgs": ["-p", "8000:8000"],
+	"forwardPorts": [8000, 8001],
+	"runArgs": ["-p", "8000:8000", "-p", "8001:8001"],
 	"workspaceFolder": "/workspace",
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
 	"postCreateCommand": "go mod download",
